@@ -12,11 +12,16 @@ public class MainProjetoBiblioteca1 {
         System.out.println("Você entrou na Aba 'Adicionar novo Livro'!\n");
         System.out.println("Digite o nome do livro: ");
         String nomeLivro = scan.nextLine();
-        nomeLivros.add(nomeLivro);
+
+        if (!nomeLivros.isEmpty())
+            nomeLivros.add(nomeLivro);
+
 
         System.out.println("Quem escreveu esse livro?: ");
         String autorLivro = scan.nextLine();
-        listaAutores.add(autorLivro);
+
+        if (!autorLivro.isEmpty())
+            listaAutores.add(autorLivro);
 
         System.out.println("Novo Livro cadastrado com sucesso");
     }
